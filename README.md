@@ -1,7 +1,10 @@
 Breast Cancer Analysis
 
 Reading the dataset:
+
 wisc_bc_df <- read.csv("C:\\Users\\APEKSHA\\Downloads\\wisc_bc_data.csv")
+
+Displaying the dataset:
 
 wisc_bc_df
 
@@ -17,9 +20,9 @@ We use this method, as it is most preferred for classification for analysis for 
 
 Questions that can be asked :
 
-what can be preventive measures for breast cancer ?
+What can be preventive measures for breast cancer ?
 
-what are the common factors that cause breast cancer ?
+What are the common factors that cause breast cancer ?
 
 Which is more common ? benign or malignant ?
 
