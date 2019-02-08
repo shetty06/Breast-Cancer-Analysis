@@ -1,5 +1,9 @@
 Breast Cancer Analysis
 
+Reading the dataset:
+wisc_bc_df <- read.csv("C:\\Users\\APEKSHA\\Downloads\\wisc_bc_data.csv")
+wisc_bc_df
+
 Problem statement :
 
 Breast cancer starts when cells in the breast begin to grow out of control. These cells usually form a tumor that can often be seen on an x-ray or felt as a lump. The tumor is malignant (cancer) if the cells can grow into surrounding tissues or spread to distant areas of the body.
