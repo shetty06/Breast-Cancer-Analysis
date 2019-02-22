@@ -2,7 +2,7 @@ Breast Cancer Analysis
 
 Reading the dataset:
 
-wisc_bc_df <- read.csv("C:\\Users\\APEKSHA\\Downloads\\wisc_bc_data.csv")
+breast_cancer <- read.csv("C:\\Users\\APEKSHA\\Downloads\\wisc_bc_data.csv")
 
 Displaying the dataset:
 
@@ -18,12 +18,10 @@ We also wish to analyse at which stage is the cancer by analysing the causing fa
 For the analysis we will use KNN (K nearest neighbour) method.
 We use this method, as it is most preferred for classification for analysis for breast cancer and gives maximum accuracy.
 
-Questions that can be asked :
+QUESTIONS:
 
-What can be preventive measures for breast cancer ?
+1. How are the various measurements related?
 
-What are the common factors that cause breast cancer ?
+2. Are there statistically significant differences between Benign and Malignant patients for the mean values of the variables?
 
-Which is more common ? benign or malignant ?
-
-Classify stages of breast cancer. 
+3. Do the Benign and Malignant show similar amounts of variation for the variables?
