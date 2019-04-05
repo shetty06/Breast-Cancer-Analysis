@@ -304,3 +304,25 @@ xlim <- range(breast_cancer_pca$x[,1])
 head(breast_cancer_pca$x[,1])
 head(breast_cancer_pca$x)
 plot(breast_cancer_pca$x,xlim=xlim,ylim=xlim)
+
+#Factor Analysis
+library(psych)
+#install.packages("psych", lib="/Library/Frameworks/R.framework/Versions/3.5/Resources/library")
+library(psych)
+fit.pc <- principal(breast_cancer[-2], nfactors=4, rotate="varimax")
+fit.pc
+round(fit.pc$values, 3)
+fit.pc$loadings
+# Loadings with more digits
+for (i in c(1,3,2,4)) { print(fit.pc$loadings[[1,i]])}
+# Communalities
+fit.pc$communality
+# Rotated factor scores, Notice the columns ordering: RC1, RC3, RC2 and RC4
+head(fit.pc$scores)
+# Play with FA utilities
+
+fa.parallel(breast_cancer[-2]) # See factor recommendation
+fa.plot(fit.pc) # See Correlations within Factors
+fa.diagram(fit.pc) # Visualize the relationship
+
+
